@@ -1,0 +1,11 @@
+.DS_Store
+
+.idea/
+node_modules/
+coverage/
+.sass-cache/
+temp/
+demo/
+
+*.css.map
+*.log
