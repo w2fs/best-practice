@@ -5,7 +5,7 @@
       2,
       "single"
     ],
-    "strict": 1,
+    //"strict": 1,//ES6的模块自动采用严格模式，不管你有没有在模块头部加上"use strict"。
     "semi": 2
   },
   "extends": "airbnb/base"
