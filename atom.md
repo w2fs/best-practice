@@ -141,8 +141,16 @@ keymap.cson (`快捷键`根据个人喜好和习惯设定)
 
 ```
 'atom-text-editor':
-  'cmd-alt-l': 'atom-beautify:beautify-editor'
-  'cmd-alt-j': 'atom-beautify:beautify-editor'
+  'cmd-alt-l cmd-alt-j': 'atom-beautify:beautify-editor'
   'cmd-alt-i': 'activate-power-mode:toggle'
   'cmd-`': 'terminal-plus:toggle'
+  'cmd-alt-up': 'pane:split-up'
+  'cmd-alt-down': 'pane:split-down'
+  'cmd-alt-left': 'pane:split-left'
+  'cmd-alt-right': 'pane:split-right'
+  'cmd-alt-shift-up':'window:focus-pane-on-up'
+  'cmd-alt-shift-down':'window:focus-pane-on-down'
+  'cmd-alt-shift-left':'window:focus-pane-on-left'
+  'cmd-alt-shift-right':'window:focus-pane-on-right'
+  'cmd-k cmd-c':'pane:close'
 ```

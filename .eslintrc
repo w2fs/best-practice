@@ -1,12 +1,32 @@
 {
+  "env": {
+    "node": true,
+    "es6": true
+  },
   "parser": "babel-eslint",
   "rules": {
     "quotes": [
       2,
       "single"
     ],
-    //"strict": 1,//ES6的模块自动采用严格模式，不管你有没有在模块头部加上"use strict"。
-    "semi": 2
+    "semi": 2,
+    "arrow-body-style": [
+      2,
+      "always"
+    ],
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    "object-curly-spacing": 0,
+    "no-console": 1,
+    "no-param-reassign": [
+      1,
+      {
+        "props": false
+      }
+    ],
+    "consistent-return": 1
   },
   "extends": "airbnb/base"
 }
