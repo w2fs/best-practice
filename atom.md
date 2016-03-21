@@ -3,13 +3,17 @@
 插件列表
 
 ```
-/Users/willin/.atom/packages (32)
+/Users/willin/.atom/packages (37)
 ├── activate-power-mode@0.4.1
 ├── atom-beautify@0.28.26
+├── atom-material-syntax@0.4.3
+├── atom-material-ui@1.2.9
+├── atom-terminal-panel@4.4.4
 ├── autoclose-html@0.23.0
 ├── autocomplete-modules@1.4.1
 ├── color-picker@2.1.1
 ├── csslint@1.1.4
+├── docblockr@0.7.3
 ├── file-icons@1.6.18
 ├── git-log@0.4.1
 ├── highlight-selected@0.11.2
@@ -17,18 +21,20 @@
 ├── js-hyperclick@1.4.1
 ├── language-babel@2.16.0
 ├── language-dots@0.0.4
-├── linter@1.11.3
+├── linter@1.11.4
 ├── linter-eslint@7.1.1
 ├── merge-conflicts@1.3.7
 ├── minimap@4.21.0
 ├── minimap-git-diff@4.2.0
 ├── minimap-highlight-selected@4.4.0
 ├── minimap-pigments@0.2.0
+├── open-in-browser@0.4.6
 ├── open-recent@5.0.0
 ├── pigments@0.24.5
 ├── project-manager@2.7.6
 ├── project-switcher@0.3.0
 ├── rest-client@1.0.0
+├── seti-ui@0.9.1
 ├── simplified-chinese-menu@3.4.11
 ├── sort-lines@0.14.0
 ├── terminal-plus@0.14.5
@@ -48,16 +54,30 @@ config.cson
       totalCount: {}
     screenShake: {}
   "atom-beautify":
+    _analyticsUserId: "9e7191b4-41e8-4a00-ae8c-4e348013bbd0"
+    analytics: false
+    js_brace_style: "collapse-preserve-inline"
     js_end_with_newline: true
+  "autoclose-html": {}
   autosave:
     enabled: true
   core:
     disabledPackages: [
+      "atom-terminal-panel"
       "symbols-view"
+    ]
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
     ]
   editor:
     invisibles: {}
+    showIndentGuide: true
     softWrap: true
+  "exception-reporting":
+    userId: "69f2bdd3-5fcf-f92b-ecd5-461248e4bd3f"
+  "file-icons":
+    onChanges: true
   "highlight-selected": {}
   "js-hyperclick": {}
   linter: {}
@@ -141,7 +161,7 @@ keymap.cson (`快捷键`根据个人喜好和习惯设定)
 
 ```
 'atom-text-editor':
-  'cmd-alt-l cmd-alt-j': 'atom-beautify:beautify-editor'
+  'cmd-alt-l': 'atom-beautify:beautify-editor'
   'cmd-alt-i': 'activate-power-mode:toggle'
   'cmd-`': 'terminal-plus:toggle'
   'cmd-alt-up': 'pane:split-up'
@@ -152,5 +172,5 @@ keymap.cson (`快捷键`根据个人喜好和习惯设定)
   'cmd-alt-shift-down':'window:focus-pane-on-down'
   'cmd-alt-shift-left':'window:focus-pane-on-left'
   'cmd-alt-shift-right':'window:focus-pane-on-right'
-  'cmd-k cmd-c':'pane:close'
+  'cmd-k':'pane:close'
 ```
