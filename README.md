@@ -1,7 +1,5 @@
 # W2FS 最佳实践
 
-[English Version](README.en_US.md)
-
 ## 配置文件
 
 * [.babelrc](settings/.babelrc)
