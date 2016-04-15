@@ -1,0 +1,33 @@
+# 这是一个演示文件，不要直接使用
+# 校验配置是否正确 https://gitlab.com/ci/lint
+
+# 全局配置
+image: node:5.10.1
+services:
+  - mysql:5.7.12
+  - redis:3.0.7
+variables:
+  MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+stages:
+  - test
+  - deploy
+cache:
+  untracked: true
+  paths:
+    - .config
+    - path/
+before_script:
+  - uname -a
+
+# 任务配置
+job:
+  image: node:5.10.1
+  services:
+    - mysql:5.7.12
+  stage: test
+  only: # 不要和 except 同时使用
+    - master
+  except:
+    - master
+  script:
+    - uname -a

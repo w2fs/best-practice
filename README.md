@@ -1,13 +1,19 @@
-# W2FS Best Practise
+# W2FS 最佳实践
 
-## [ESLint](.eslintrc)
+[English Version](README.en_US.md)
 
-```
-npm i -g eslint eslint-config-airbnb
-```
+## 配置文件
 
-How to enable:
+* [.babelrc](settings/.babelrc)
+* [.eslintignore](settings/.eslintignore)
+* [.eslintrc.json](settings/.eslintrc.json)
+* [.gitignore](settings/.gitignore)
+* [.gitlab-ci.yaml](settings/.gitlab-ci.yaml)
+* [.npmignore](settings/.npmignore)
+* [.scss-lint.yml](settings/.secc-lint.yml)
+* [.tern-project](settings/.tern-project)
 
-> Preferences -> Languages & Frameworks -> Javascript -> Code Quality Tools -> ESLint
+## 文档
 
-## [Atom](atom.md)
+* [Atom](docs/atom.md)
+* [Gitlab CI](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/ci/yaml/README.md)

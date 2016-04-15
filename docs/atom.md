@@ -1,40 +1,43 @@
 # Atom
 
-插件列表
+## 插件列表 / Plugin List
 
 ```
-/Users/willin/.atom/packages (37)
+Community Packages (40) /Users/willin/.atom/packages
 ├── activate-power-mode@0.4.1
-├── atom-beautify@0.28.26
-├── atom-material-syntax@0.4.3
-├── atom-material-ui@1.2.9
+├── atom-beautify@0.29.2
+├── atom-material-syntax@0.4.6
+├── atom-material-ui@1.2.10
 ├── atom-terminal-panel@4.4.4
+├── atom-ternjs@0.13.2
+├── auto-update-packages@1.0.1
 ├── autoclose-html@0.23.0
 ├── autocomplete-modules@1.4.1
+├── ava@0.3.1
 ├── color-picker@2.1.1
 ├── csslint@1.1.4
 ├── docblockr@0.7.3
-├── file-icons@1.6.18
+├── file-icons@1.7.2
 ├── git-log@0.4.1
 ├── highlight-selected@0.11.2
 ├── hyperclick@0.0.35
-├── js-hyperclick@1.4.1
-├── language-babel@2.16.0
+├── js-hyperclick@1.4.2
+├── language-babel@2.17.2
 ├── language-dots@0.0.4
 ├── linter@1.11.4
-├── linter-eslint@7.1.1
-├── merge-conflicts@1.3.7
+├── linter-eslint@7.2.0
+├── merge-conflicts@1.4.1
 ├── minimap@4.21.0
 ├── minimap-git-diff@4.2.0
 ├── minimap-highlight-selected@4.4.0
 ├── minimap-pigments@0.2.0
-├── open-in-browser@0.4.6
+├── open-in-browser@0.4.7
 ├── open-recent@5.0.0
-├── pigments@0.24.5
-├── project-manager@2.7.6
+├── pigments@0.26.0
+├── project-manager@2.9.7
 ├── project-switcher@0.3.0
 ├── rest-client@1.0.0
-├── seti-ui@0.9.1
+├── seti-ui@0.9.2
 ├── simplified-chinese-menu@3.4.11
 ├── sort-lines@0.14.0
 ├── terminal-plus@0.14.5
@@ -43,7 +46,7 @@
 └── tool-bar-config@0.0.2
 ```
 
-config.cson
+## config.cson
 
 ```
 "*":
@@ -54,10 +57,67 @@ config.cson
       totalCount: {}
     screenShake: {}
   "atom-beautify":
-    _analyticsUserId: "9e7191b4-41e8-4a00-ae8c-4e348013bbd0"
-    analytics: false
-    js_brace_style: "collapse-preserve-inline"
-    js_end_with_newline: true
+    apex: {}
+    arduino: {}
+    c: {}
+    cfml: {}
+    coffeescript:
+      indent_size: 2
+    cpp: {}
+    cs: {}
+    css: {}
+    d: {}
+    ejs: {}
+    erb: {}
+    fortran: {}
+    general:
+      _analyticsUserId: "ea162638-166c-40b5-835b-108ef72f93f3"
+      analytics: false
+    gherkin: {}
+    handlebars: {}
+    html:
+      end_with_newline: true
+      indent_inner_html: true
+      indent_size: 2
+      max_preserve_newlines: 1
+    jade: {}
+    java: {}
+    js:
+      beautify_on_save: true
+      brace_style: "collapse-preserve-inline"
+      end_with_comma: true
+      end_with_newline: true
+      indent_size: 2
+      keep_function_indentation: true
+    json:
+      beautify_on_save: true
+      indent_size: 2
+    jsx: {}
+    latex: {}
+    less: {}
+    marko: {}
+    mustache: {}
+    objectivec: {}
+    pawn: {}
+    perl: {}
+    php: {}
+    python: {}
+    riot: {}
+    ruby: {}
+    rust: {}
+    sass: {}
+    scss: {}
+    spacebars: {}
+    sql: {}
+    svg: {}
+    swig: {}
+    tss: {}
+    twig: {}
+    typescript: {}
+    vala: {}
+    visualforce: {}
+    xml: {}
+    xtemplate: {}
   "autoclose-html": {}
   autosave:
     enabled: true
@@ -71,6 +131,7 @@ config.cson
       "atom-material-syntax"
     ]
   editor:
+    fontFamily: "'Source Code Pro for Powerline'"
     invisibles: {}
     showIndentGuide: true
     softWrap: true
@@ -80,7 +141,10 @@ config.cson
     onChanges: true
   "highlight-selected": {}
   "js-hyperclick": {}
-  linter: {}
+  linter:
+    errorPanelHeight: 32
+    showErrorTabLine: true
+  "linter-eslint": {}
   "merge-conflicts": {}
   minimap:
     plugins:
@@ -92,6 +156,18 @@ config.cson
       pigmentsDecorationsZIndex: 0
   "rest-client": {}
   "simplified-chinese-menu": {}
+  "terminal-plus":
+    core:
+      mapTerminalsTo: "Folder"
+    style:
+      fontFamily: "'Source Code Pro for Powerline'"
+  "todo-show":
+    ignoreThesePaths: [
+      "**/node_modules/"
+      "**/vendor/"
+      "**/bower_components/"
+      "**/public/"
+    ]
   "tool-bar":
     position: "Left"
   "tool-bar-config": [
@@ -157,12 +233,17 @@ config.cson
     showOnStartup: false
 ```
 
-keymap.cson (`快捷键`根据个人喜好和习惯设定)
+## keymap.cson
+
+(`快捷键`根据个人喜好和习惯设定 / up to your habit)
+
 
 ```
 'atom-text-editor':
   'cmd-alt-l': 'atom-beautify:beautify-editor'
-  'cmd-alt-i': 'activate-power-mode:toggle'
+  'cmd-shift-l': 'atom-beautify:beautify-editor'
+  'cmd-alt-j': 'activate-power-mode:toggle'
+  'cmd-shift-j': 'activate-power-mode:toggle'
   'cmd-`': 'terminal-plus:toggle'
   'cmd-alt-up': 'pane:split-up'
   'cmd-alt-down': 'pane:split-down'
@@ -173,4 +254,5 @@ keymap.cson (`快捷键`根据个人喜好和习惯设定)
   'cmd-alt-shift-left':'window:focus-pane-on-left'
   'cmd-alt-shift-right':'window:focus-pane-on-right'
   'cmd-k':'pane:close'
+  'cmd-1':'todo-show:find-in-project'
 ```
