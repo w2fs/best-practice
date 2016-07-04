@@ -18,3 +18,7 @@
 
 * [Atom](docs/atom.md)
 * [Gitlab CI](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/ci/yaml/README.md)
+
+## 快速安装
+
+* [NPM包](docs/npm.md)
