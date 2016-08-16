@@ -3,47 +3,56 @@
 ## 插件列表 / Plugin List
 
 ```
-Community Packages (40) /Users/willin/.atom/packages
-├── activate-power-mode@0.4.1
-├── atom-beautify@0.29.2
+Community Packages (49) /Users/willin/.atom/packages
+├── activate-power-mode@0.7.4
+├── atom-beautify
+├── atom-jade@0.3.0
 ├── atom-material-syntax@0.4.6
-├── atom-material-ui@1.2.10
+├── atom-material-ui@1.3.3
 ├── atom-terminal-panel@4.4.4
-├── atom-ternjs@0.13.2
+├── atom-ternjs@0.14.2
+├── atom-typescript@10.1.6
 ├── auto-update-packages@1.0.1
 ├── autoclose-html@0.23.0
-├── autocomplete-modules@1.4.1
-├── ava@0.3.1
-├── color-picker@2.1.1
-├── csslint@1.1.4
-├── docblockr@0.7.3
-├── file-icons@1.7.2
+├── autocomplete-modules@1.6.1
+├── ava@0.7.0
+├── color-picker@2.2.2
+├── csslint@1.1.5
+├── docblockr@0.8.2
+├── editorconfig@1.4.1
+├── file-icons@1.7.18
 ├── git-log@0.4.1
+├── git-time-machine@1.5.3
 ├── highlight-selected@0.11.2
-├── hyperclick@0.0.35
+├── hyperclick@0.0.37
 ├── js-hyperclick@1.4.2
-├── language-babel@2.17.2
+├── language-babel
 ├── language-dots@0.0.4
-├── linter@1.11.4
-├── linter-eslint@7.2.0
-├── merge-conflicts@1.4.1
-├── minimap@4.21.0
-├── minimap-git-diff@4.2.0
+├── language-javascript-jsx@0.3.7
+├── language-swigjs@0.3.1
+├── linter@1.11.16
+├── linter-eslint@7.2.4
+├── linter-tslint@0.11.1
+├── markdown-scroll-sync@2.1.2
+├── merge-conflicts@1.4.4
+├── minimap@4.24.7
+├── minimap-git-diff@4.3.1
 ├── minimap-highlight-selected@4.4.0
-├── minimap-pigments@0.2.0
+├── minimap-pigments@0.2.1
 ├── open-in-browser@0.4.7
 ├── open-recent@5.0.0
-├── pigments@0.26.0
+├── pigments@0.31.2
 ├── project-manager@2.9.7
 ├── project-switcher@0.3.0
-├── rest-client@1.0.0
-├── seti-ui@0.9.2
+├── rest-client@1.2.1
+├── screen-recorder@1.2.0
+├── seti-ui@1.3.1
 ├── simplified-chinese-menu@3.4.11
 ├── sort-lines@0.14.0
 ├── terminal-plus@0.14.5
-├── todo-show@1.4.0
-├── tool-bar@0.4.0
-└── tool-bar-config@0.0.2
+├── todo-show@1.7.0
+├── tool-bar@1.0.1
+└── tool-bar-config@0.1.0
 ```
 
 ## config.cson
@@ -73,6 +82,7 @@ Community Packages (40) /Users/willin/.atom/packages
     general:
       _analyticsUserId: "ea162638-166c-40b5-835b-108ef72f93f3"
       analytics: false
+      beautifyEntireFileOnSave: false
     gherkin: {}
     handlebars: {}
     html:
@@ -83,7 +93,6 @@ Community Packages (40) /Users/willin/.atom/packages
     jade: {}
     java: {}
     js:
-      beautify_on_save: true
       brace_style: "collapse-preserve-inline"
       end_with_comma: true
       end_with_newline: true
@@ -124,14 +133,16 @@ Community Packages (40) /Users/willin/.atom/packages
   core:
     disabledPackages: [
       "atom-terminal-panel"
-      "symbols-view"
+      "atom-beautify"
+      "editorconfig"
     ]
     themes: [
       "atom-material-ui"
       "atom-material-syntax"
     ]
   editor:
-    fontFamily: "'Source Code Pro for Powerline'"
+    fontFamily: "'Source Code Pro for Powerline','Electrolize'"
+    fontSize: 15
     invisibles: {}
     showIndentGuide: true
     softWrap: true
@@ -142,9 +153,11 @@ Community Packages (40) /Users/willin/.atom/packages
   "highlight-selected": {}
   "js-hyperclick": {}
   linter:
-    errorPanelHeight: 32
+    errorPanelHeight: 71
+    showErrorPanel: false
     showErrorTabLine: true
-  "linter-eslint": {}
+  "linter-eslint":
+    fixOnSave: true
   "merge-conflicts": {}
   minimap:
     plugins:
@@ -154,8 +167,16 @@ Community Packages (40) /Users/willin/.atom/packages
       "highlight-selectedDecorationsZIndex": 0
       pigments: true
       pigmentsDecorationsZIndex: 0
+  "project-manager":
+    sortBy: "last modified"
   "rest-client": {}
   "simplified-chinese-menu": {}
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
   "terminal-plus":
     core:
       mapTerminalsTo: "Folder"
@@ -229,6 +250,8 @@ Community Packages (40) /Users/willin/.atom/packages
       callback: "window:reload"
     }
   ]
+  "tree-view":
+    autoReveal: true
   welcome:
     showOnStartup: false
 ```
