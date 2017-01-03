@@ -27,7 +27,12 @@
 ```
 [
   // HHKB
-  { "key": "cmd+escape", "command": "workbench.action.terminal.toggleTerminal" }
+  { "key": "cmd+escape", "command": "workbench.action.terminal.toggleTerminal" },
+  { "key": "cmd+shift+escape", "command": "workbench.action.showErrorsWarnings"},
+  { "key": "alt+i", "command": "cursorUp", "when": "editorTextFocus" },
+  { "key": "alt+j", "command": "cursorLeft", "when": "editorTextFocus" },
+  { "key": "alt+k", "command": "cursorDown", "when": "editorTextFocus" },
+  { "key": "alt+l", "command": "cursorRight", "when": "editorTextFocus" }
 ]
 ```
 
