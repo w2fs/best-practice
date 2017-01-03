@@ -16,6 +16,7 @@
 
 ## 文档
 
+* [VS Code](docs/vscode.md)
 * [Atom](docs/atom.md)
 * [Gitlab CI](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/ci/yaml/README.md)
 
